@@ -1,0 +1,80 @@
+.card .img-fit{
+    /* width: 500px; */
+    aspect-ratio: 3 / 4;
+    /* Aspect ratio- is used to provide height and width to the image . width/height ratio.
+Syntax- aspect-ratio:1/1 */
+
+    object-fit: cover;
+    object-position: top;
+    /* position: top; */
+    /* Object fit- cover is used to fit Image as per width without downgrading quality.
+Object fit is also uses property object –positioning : left/right/top/bottow- to crop from right/left/bottom/top respectively. */
+
+}
+
+
+@media(max-width : 767.98px){
+    .card .img-fit{
+        aspect-ratio: 1/1;
+        /* @media query is used to create responsive designs that adapt to various screen sizes and devices, such as desktops, tablets, and mobile phones. */
+    }
+}
+
+.text-end a {
+    width: 100%;
+}
+
+.card-title
+{
+    text-align: center;
+    
+}
+
+.card{
+    height: 100%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-text
+{
+   flex-grow: 1;
+    
+}
+.container h2 {
+    /* background: #7091F5; */
+    color: black;
+    /* width: 200px; */
+    padding: 5px;
+    height: 40px;
+    font-size: 54px;
+    text-align: center;
+   margin-bottom: 5px;
+
+}
+/* .container h2::after
+{
+   content:'';
+   border-top: 40px solid #7091F5;
+   border-right: 40px solid transparent;
+       position: relative;
+   left: 40px;
+   top: 35px;
+} */
+
+.card-title:hover {
+ color: gold;
+}
+.rate-text{
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+
+body{
+    background-color: aliceblue;
+}
